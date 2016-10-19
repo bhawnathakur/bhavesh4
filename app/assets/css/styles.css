@@ -1,0 +1,71 @@
+
+/** ./style.css **/
+/* Jumbotron */
+body{ background-color:#20202f;padding: 20px; margin: 20px;font-size: 16px;
+}
+main{ background-color:#F0f0e1;
+padding :30px 15px 15px 15px;
+min-height:800px;
+
+}
+#header
+{
+	
+  background-color:#0000f0;
+  min-height:120px; 
+}
+#nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+	
+}
+.validation-error{color:#f00;}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#nav  li {
+    float: left;
+}
+
+.nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    opacity: 1.0;
+}
+
+/* Change the link color to #111 (black) on hover */
+#nav  li a:hover {
+    background-color: #111;
+}
+#nav  li a:hover {
+    background-color: #111;
+}
+
+#nav  li  a:active, a:visited, a:focus {
+     background-color: #4CAF50;
+    color: white;
+}
+
+/* Content Wrapper */
+.containerMain{
+  width: 100%;
+  margin: 0 auto;
+}
+#login{
+float:right;
+margin-right:10%;
+font-size:24px;
+color: #FFFFFF;
+}
+#accountForm input{width:300px;font-size: inherit}
+#accountForm button{width:200px; margin: 15px 0;border-radius: 3px;background-color:#eee;cursor: pointer;font-size: inherit }
+accountForm button:disabled{background-color:#bbb; }

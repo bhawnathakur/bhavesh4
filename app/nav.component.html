@@ -1,0 +1,54 @@
+ <!--Navbar-->
+  
+    <nav class="navbar navbar-dark bg-primary">
+
+        <!-- Collapse button-->
+       
+
+        <div class="container">
+
+            <!--Collapse content-->
+             
+            <div class=" navbar-toggleable-xs" id="collapseEx2">
+                <!--Navbar Brand-->
+              
+                <!--Links-->
+               
+                <ul class="nav navbar-nav">
+                     <li>
+          <a routerLink="/" routerLinkActive="active" >Home</a>
+          </li>
+           <li>
+          <a routerLink="/about" routerLinkActive="active" >About Us</a>
+          </li>
+             <li>
+          <a routerLink="/services" routerLinkActive="active" >Services</a>
+          </li>
+             
+          <li>
+          <a routerLink="login"  routerLinkActive="active">Login</a>
+          </li>
+           
+            <li>
+          <a routerLink="contact"  routerLinkActive="active">Contact Us</a>
+          </li>
+           <li>
+          <a routerLink="profile" *ngIf="loggedIn()"   routerLinkActive="active">Profile</a>
+          </li>
+           
+           <li>
+          <a href="#" *ngIf="!loggedIn()" (click)="login()">Login</a>
+          </li>
+ <li>
+          <a href="#" *ngIf="loggedIn()" (click)="logout()">Logout</a>
+          </li>
+                </ul>
+                <!--Search form-->
+               
+            </div>
+            <!--/.Collapse content-->
+
+        </div>
+
+    </nav>
+    <!--/.Navbar-->
